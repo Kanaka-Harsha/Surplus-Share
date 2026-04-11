@@ -1,6 +1,6 @@
 #This code is the user input checker, only allows specific type of data to be sent to db.
 
-from pdantic import BaseModel, EmailStr # Used to enfore strict datatypes
+from pydantic import BaseModel, EmailStr # Used to enfore strict datatypes
 from typing import Optional
 from datetime import datetime
 
@@ -30,7 +30,7 @@ class FoodListingResponse(BaseModel):
     qty: str 
     status: str 
     provider_id: int
-    claimed-id: Optional[int]=None
+    claimed_id: Optional[int]=None
     created_at: datetime
 
      
