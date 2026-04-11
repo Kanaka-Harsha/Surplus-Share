@@ -2,3 +2,4 @@
 .vscode/
 .idea/
 .gitignore
+__pycache__/
